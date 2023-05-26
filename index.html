@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Celsius To Fahrenheit </title>
+	<link rel="stylesheet" type="text/css" href="p.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="body">
+	<div id="outerdiv">
+	<div id="fdiv">
+	    <h2 id="h1">Celsius To Fahrenheit </h2>
+	    <input id="input" type="text" name="centemeter" placeholder="Enter your centemeter">
+    </div>
+    <div id="sdiv">
+    	<button id="btn" type="submit" onclick="convert()">CLICK TO CONVERT</button>
+    </div>
+    <div id="answer"></div>
+    </div>
+    <script>
+    	function convert()
+    	{
+    		let user_input=Number(document.getElementById("input").value);
+    		let processin=(user_input*1.8)+32
+    		let result=document.getElementById("answer") 
+    		answer.innerHTML=processin.toFixed(3)+"f"
+    	}
+    </script>
+</body>
+</html>
